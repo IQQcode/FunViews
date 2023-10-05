@@ -1,0 +1,94 @@
+plugins {
+    id 'kotlin-kapt'
+    id 'org.jetbrains.kotlin.android'
+}
+
+// 注意gradle.properties中的数据类型都是String类型，使用其他数据类型需要自行转换
+if (isDebug.toBoolean()) {
+    // 构建后输出一个 APK 安装包
+    apply plugin: 'com.android.application'
+} else {
+    // 构建后输出 ARR 包
+    apply plugin: 'com.android.library'
+}
+
+android {
+    namespace 'top.iqqcode.module.components'
+    compileSdk app_android.compileSdk
+
+    defaultConfig {
+        if (isDebug) {
+            applicationId "top.iqqcode.module.components"
+        }
+        minSdk  app_android.minSdk
+        targetSdk app_android.targetSdk
+        versionCode app_android.versionCode
+        versionName app_android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME": project.getName())
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    viewBinding {
+        enabled = true
+    }
+
+    // 集源：用来设置Java目录或者资源文件
+    sourceSets {
+        main {
+            if (isDebug) {
+                // 组件化模式，单独运行
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                // 集成化模式，整个项目打包
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    // release是debug目录下文件不需要合并到主干工程(测试代码)
+                    exclude '**/debug/**'
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+
+    if (isRelease) {
+        api project(':lib_common')
+        api project(':module_core')
+        api project(':module_animations')
+        kapt libARouterCompiler
+    }
+
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

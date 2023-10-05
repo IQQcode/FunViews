@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/chat_group_head_image"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/android_studio_alt_icon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/chat_group_head_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/chat_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textStyle="bold"
+            tools:text="实现公告小喇叭功能" />
+
+        <TextView
+            android:id="@+id/chat_group_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            tools:text="哈哈哈哈哈哈哈哈哈哈" />
+
+    </LinearLayout>
+
+</RelativeLayout>

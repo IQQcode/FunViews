@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+    }
+}
+
+rootProject.name = "FunViews"
+include ':app'
+include ':lib_common'
+include ':module_main'
+include ':module_layout'
+include ':module_components'
+include ':module_animations'
+include ':module_core'

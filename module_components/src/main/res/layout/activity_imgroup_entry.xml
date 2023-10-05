@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:autoStart="true"
+        android:background="@drawable/round_concern_bg"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/anim_marquee_in"
+        android:outAnimation="@anim/anim_marquee_out"
+        android:paddingStart="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/animation_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/view_flipper"
+        android:layout_marginTop="40dp"
+        android:background="#f9ca24">
+
+        <TextView
+            android:id="@+id/mTextBall"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_ball"
+            android:gravity="center"
+            android:text="translationX"
+            android:textColor="#f9ca24"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <top.iqqcode.module.components.floats.demo.ExpandButtonLayout
+        android:id="@+id/expanded_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animation_container"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        tools:background="#ff7f50" />
+
+    <Button
+        android:id="@+id/button_to_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="左移" />
+
+
+    <Button
+        android:id="@+id/button_to_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/button_to_left"
+        android:text="右移" />
+
+    <Button
+        android:id="@+id/button_to_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/button_to_right"
+        android:text="重置" />
+
+    <Button
+        android:id="@+id/button_to_test01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/button_to_reset"
+        android:text="测试" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animation_container"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_concern_bg"
+        android:padding="13dp"
+        android:src="@drawable/baseline_add_black_24dp" />
+
+
+    <top.iqqcode.module.components.floats.view.ExpandAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animation_container"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="10dp" />
+
+</RelativeLayout>

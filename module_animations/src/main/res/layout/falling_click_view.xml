@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/expand_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tbds104"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/tbds36"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/M_W_X014"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/expand_background"
+            android:layout_width="@dimen/tbds100"
+            android:layout_height="@dimen/tbds100"
+            android:layout_marginLeft="@dimen/tbds2" />
+
+        <TextView
+            android:id="@+id/expand_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/M_W_X004"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textSize="@dimen/T_X07" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buoy_image"
+        android:layout_width="@dimen/tbds114"
+        android:layout_height="@dimen/tbds114"
+        android:layout_marginLeft="@dimen/M_W_X006"
+        android:layout_marginBottom="@dimen/tbds15"
+        android:scaleType="centerCrop" />
+
+</FrameLayout>

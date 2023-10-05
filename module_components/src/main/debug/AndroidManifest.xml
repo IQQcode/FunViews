@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FunViews">
+        <activity
+            android:name=".ComponentsActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".expend.entrance.FrsFloatEntranceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".expend.hotspot.ExpendBaseDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".expend.hotspot.ExpendClickActivity"
+            android:exported="false" />
+        <activity
+            android:name=".expend.spread.SpreadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".edittext.CustomTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".flipper.CarouselDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".floats.FloatExpandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".floats.IMGroupEntryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".icon.ExpendBoxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".label.EmotionLabelActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

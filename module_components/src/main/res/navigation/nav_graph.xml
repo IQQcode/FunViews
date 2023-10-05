@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/spreadLayoutFragment">
+
+    <fragment
+        android:id="@+id/spreadLayoutFragment"
+        android:name="top.iqqcode.module.components.expend.spread.SpreadLayoutFragment">
+
+        <action
+            android:id="@+id/action_to_spreadGroupFragment"
+            app:destination="@+id/spreadGroupFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/spreadGroupFragment"
+        android:name="top.iqqcode.module.components.expend.spread.SpreadGroupFragment">
+
+        <action
+            android:id="@+id/action_to_spreadLayoutFragment"
+            app:popUpTo="@id/spreadLayoutFragment" />
+
+    </fragment>
+
+</navigation>

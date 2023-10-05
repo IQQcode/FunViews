@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/ad_label_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/M_H_X003"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/tbds3">
+
+        <ImageView
+            android:id="@+id/falling_ad_feedback_img"
+            android:layout_width="@dimen/tbds31"
+            android:layout_height="@dimen/tbds31"
+            android:layout_marginLeft="@dimen/M_W_X001" />
+
+        <TextView
+            android:id="@+id/falling_ad_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/M_W_X001"
+            android:layout_marginRight="@dimen/M_H_X002"
+            android:paddingBottom="@dimen/tbds2"
+            android:text="广告"
+            android:textSize="@dimen/T_X09" />
+    </LinearLayout>
+</FrameLayout>

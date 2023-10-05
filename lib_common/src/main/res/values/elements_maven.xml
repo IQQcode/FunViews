@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+	<dimen name="T_X01">@dimen/tbds88</dimen>
+	<dimen name="T_X02">@dimen/tbds73</dimen>
+	<dimen name="T_X03">@dimen/tbds57</dimen>
+	<dimen name="T_X04">@dimen/tbds52</dimen>
+	<dimen name="T_X05">@dimen/tbds44</dimen>
+	<dimen name="T_X06">@dimen/tbds42</dimen>
+	<dimen name="T_X07">@dimen/tbds39</dimen>
+	<dimen name="T_X08">@dimen/tbds34</dimen>
+	<dimen name="T_X09">@dimen/tbds31</dimen>
+	<dimen name="T_X10">@dimen/tbds26</dimen>
+	<dimen name="T_X11">@dimen/tbds62</dimen>
+	<dimen name="T_X12">@dimen/tbds37</dimen>
+	<dimen name="T_X13">@dimen/tbds47</dimen>
+	<string name="F_X01">regular</string>
+	<string name="F_X02">bold</string>
+	<string name="J_X01">0.5H,0.5H,0.5H,0.5H</string>
+	<string name="J_X02">0,0,0,0</string>
+	<string name="J_X03">5,5,5,5</string>
+	<string name="J_X04">10,10,10,10</string>
+	<string name="J_X05">21,21,21,21</string>
+	<string name="J_X06">31,31,31,31</string>
+	<string name="J_X07">52,52,52,52</string>
+	<string name="J_X08">0,21,0,0</string>
+	<string name="J_X09">0,0,21,0</string>
+	<string name="J_X10">0,0,0,21</string>
+	<string name="J_X11">0,21,21,0</string>
+	<string name="J_X12">21,0,0,21</string>
+	<string name="J_X13">21,21,0,0</string>
+	<string name="J_X14">31,31,0,0</string>
+	<string name="J_X15">21,0,0,0</string>
+	<string name="J_X16">0,0,21,21</string>
+	<string name="J_X17">0,0,31,31</string>
+	<string name="J_X18">52,52,0,0</string>
+	<string name="J_X19">58,58,58,58</string>
+	<string name="J_X20">52,0,0,52</string>
+	<dimen name="L_X01">@dimen/tbds1</dimen>
+	<dimen name="L_X02">@dimen/tbds2</dimen>
+	<dimen name="L_X03">@dimen/tbds4</dimen>
+	<dimen name="L_X04">@dimen/tbds5</dimen>
+	<dimen name="L_X05">@dimen/tbds8</dimen>
+	<dimen name="L_X06">@dimen/tbds15</dimen>
+	<dimen name="M_H_X001">@dimen/tbds10</dimen>
+	<dimen name="M_H_X002">@dimen/tbds16</dimen>
+	<dimen name="M_H_X003">@dimen/tbds21</dimen>
+	<dimen name="M_H_X004">@dimen/tbds31</dimen>
+	<dimen name="M_H_X005">@dimen/tbds42</dimen>
+	<dimen name="M_H_X006">@dimen/tbds47</dimen>
+	<dimen name="M_H_X007">@dimen/tbds52</dimen>
+	<dimen name="M_H_X008">@dimen/tbds62</dimen>
+	<dimen name="M_H_X009">@dimen/tbds73</dimen>
+	<dimen name="M_H_X010">@dimen/tbds83</dimen>
+	<dimen name="M_H_X011">@dimen/tbds94</dimen>
+	<dimen name="M_H_X012">@dimen/tbds104</dimen>
+	<dimen name="M_H_X013">@dimen/tbds114</dimen>
+	<dimen name="M_H_X014">@dimen/tbds125</dimen>
+	<dimen name="M_H_X015">@dimen/tbds135</dimen>
+	<dimen name="M_H_X016">@dimen/tbds146</dimen>
+	<dimen name="M_H_X017">@dimen/tbds156</dimen>
+	<dimen name="M_W_X001">@dimen/tbds5</dimen>
+	<dimen name="M_W_X002">@dimen/tbds10</dimen>
+	<dimen name="M_W_X003">@dimen/tbds16</dimen>
+	<dimen name="M_W_X004">@dimen/tbds21</dimen>
+	<dimen name="M_W_X005">@dimen/tbds29</dimen>
+	<dimen name="M_W_X006">@dimen/tbds31</dimen>
+	<dimen name="M_W_X007">@dimen/tbds34</dimen>
+	<dimen name="M_W_X008">@dimen/tbds42</dimen>
+	<dimen name="M_W_X009">@dimen/tbds44</dimen>
+	<dimen name="M_W_X010">@dimen/tbds47</dimen>
+	<dimen name="M_W_X011">@dimen/tbds49</dimen>
+	<dimen name="M_W_X012">@dimen/tbds52</dimen>
+	<dimen name="M_W_X013">@dimen/tbds62</dimen>
+	<dimen name="M_W_X014">@dimen/tbds73</dimen>
+	<dimen name="M_W_X015">@dimen/tbds83</dimen>
+	<dimen name="M_W_X016">@dimen/tbds94</dimen>
+	<dimen name="M_W_X017">@dimen/tbds104</dimen>
+	<dimen name="M_W_X018">@dimen/tbds114</dimen>
+	<dimen name="M_W_X019">@dimen/tbds125</dimen>
+	<dimen name="M_W_X020">@dimen/tbds135</dimen>
+	<dimen name="M_W_X021">@dimen/tbds146</dimen>
+	<dimen name="M_W_X022">@dimen/tbds156</dimen>
+	<dimen name="M_T_X001">@dimen/tbds16</dimen>
+	<dimen name="M_T_X002">@dimen/tbds21</dimen>
+	<dimen name="M_T_X003">@dimen/tbds31</dimen>
+	<string-array name="S_O_X001">
+		<item>CAM_X0607</item>
+		<item>0</item>
+		<item>0,2</item>
+	</string-array>
+	<string-array name="S_O_X002">
+		<item>CAM_X0802</item>
+		<item>10</item>
+		<item>0,5</item>
+	</string-array>
+	<string-array name="S_O_X003">
+		<item>CAM_X0803</item>
+		<item>16</item>
+		<item>0,5</item>
+	</string-array>
+	<string-array name="S_O_X004">
+		<item>CAM_X0803</item>
+		<item>21</item>
+		<item>0,5</item>
+	</string-array>
+	<string-array name="S_O_X005">
+		<item>CAM_X0602</item>
+		<item>21</item>
+		<item>0,0</item>
+	</string-array>
+	<string-array name="Mask_X001">
+		<item>CAM_X0604,CAM_X0604,CAM_X0601</item>
+		<item>0.0,0.2,1.0</item>
+		<item>bottom</item>
+	</string-array>
+	<string-array name="Mask_X002">
+		<item>CAM_X0604,CAM_X0604,CAM_X0601</item>
+		<item>0.0,0.3,1.0</item>
+		<item>top</item>
+	</string-array>
+	<string-array name="Mask_X003">
+		<item>CAM_X0605,CAM_X0601</item>
+		<item>0.0,0.2</item>
+		<item>bottom</item>
+	</string-array>
+	<string-array name="Mask_X004">
+		<item>CAM_X0604</item>
+		<item>0.0,1.0</item>
+		<item>top</item>
+	</string-array>
+	<string-array name="Mask_X005">
+		<item>CAM_X0605</item>
+		<item>0.0,1.0</item>
+		<item>top</item>
+	</string-array>
+	<string-array name="Mask_X006">
+		<item>CAM_X0608</item>
+		<item>0.0,1.0</item>
+		<item>top</item>
+	</string-array>
+	<string-array name="Mask_X007">
+		<item>CAM_X0610</item>
+		<item>0.0,1.0</item>
+		<item>top</item>
+	</string-array>
+	<string name="A_X01">1.0</string>
+	<string name="A_X02">0.92</string>
+	<string name="A_X03">0.83</string>
+	<string name="A_X04">0.75</string>
+	<string name="A_X05">0.66</string>
+	<string name="A_X06">0.58</string>
+	<string name="A_X07">0.50</string>
+	<string name="A_X08">0.42</string>
+	<string name="A_X09">0.33</string>
+	<string name="A_X10">0.25</string>
+	<string name="A_X11">0.16</string>
+	<string name="A_X12">0.8</string>
+	<string name="A_X13">0.4</string>
+	<string name="A_X14">0.0</string>
+</resources>

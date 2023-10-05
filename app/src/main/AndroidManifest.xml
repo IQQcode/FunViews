@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name="top.iqqcode.module.components.expend.spread.SpreadActivity"
+            android:exported="false" />
+        <activity
+            android:name="top.iqqcode.module.animations.values.PathAnimatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".anima.rain.FallingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".label.EmotionLabelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".icon.ExpendBoxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".anima.alpha.NaturalAlphaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".flipper.CarouselDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".expend.entrance.FrsFloatEntranceActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".expend.hotspot.ExpendBaseDemoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".floats.FloatExpandActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".floats.IMGroupEntryActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="top.iqqcode.module.components.expend.hotspot.ExpendClickActivity"
+            android:exported="false" />
+        <activity
+            android:name="top.iqqcode.module.layout.print.PrintActivity"
+            android:exported="false" />
+        <activity
+            android:name="top.iqqcode.module.components.edittext.CustomTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

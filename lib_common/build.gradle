@@ -1,0 +1,100 @@
+plugins {
+    id 'kotlin-kapt'
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'top.iqqcode.lib.common'
+    compileSdk app_android.compileSdk
+
+    defaultConfig {
+        // 组件化模式下才需要applicationId
+        if (isDebug) {
+            applicationId "top.iqqcode.lib.common"
+        }
+        minSdk app_android.minSdk
+        targetSdk app_android.targetSdk
+        versionCode app_android.versionCode
+        versionName app_android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME": project.getName())
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    // 集源：用来设置Java目录或者资源文件
+    sourceSets {
+        main {
+            if (isDebug) {
+                // 组件化模式，单独运行
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                // 集成化模式，整个项目打包
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    // release是debug目录下文件不需要合并到主干工程(测试代码)
+                    exclude '**/debug/**'
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+
+    api libARouter
+    kapt libARouterCompiler
+
+    api 'com.google.dagger:hilt-android:2.40.1'
+    annotationProcessor 'com.google.dagger:hilt-compiler:2.40.1'
+
+    // Navigation
+    api 'androidx.navigation:navigation-fragment-ktx:2.6.0'
+
+    // https://xingyun.xiaojukeji.com/docs/dokit/#/androidGuide
+    debugApi 'io.github.didi.dokit:dokitx:3.5.0'
+    releaseApi 'io.github.didi.dokit:dokitx-no-op:3.5.0'
+
+    // Volley
+    api 'com.android.volley:volley:1.2.1'
+
+    // Glide
+    api 'com.github.bumptech.glide:glide:4.14.2'
+    api 'androidx.core:core-ktx:1.10.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    // Fresco
+    api 'com.facebook.fresco:fresco:3.1.1'
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="top.iqqcode.module.layout">
+
+    <application>
+        <activity
+            android:name=".LayoutActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
