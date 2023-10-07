@@ -121,7 +121,7 @@ class AppMainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.eggFalling -> {
                 // startActivity(Intent(this@MainActivity, FallingActivity::class.java))
                 // 应用内简单的跳转(通过URL跳转在'进阶用法'中)
-                ARouter.getInstance().build(RouterAbility.ANIMATIONS_MAIN).navigation()
+                ARouter.getInstance().build(RouterAbility.CORE_MAIN_FRAME).navigation()
             }
 
             R.id.pathAnimator -> startActivity(

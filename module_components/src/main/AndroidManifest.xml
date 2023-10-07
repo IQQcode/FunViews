@@ -5,7 +5,10 @@
     <application>
         <activity
             android:name=".ComponentsActivity"
-            android:exported="true" />
+            android:exported="false" />
+        <activity
+            android:name=".edittext.CustomTextActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

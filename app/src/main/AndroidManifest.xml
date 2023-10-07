@@ -18,25 +18,10 @@
             android:name="top.iqqcode.module.components.expend.spread.SpreadActivity"
             android:exported="false" />
         <activity
-            android:name="top.iqqcode.module.animations.values.PathAnimatorActivity"
+            android:name="top.iqqcode.module.core.CoreMainActivity"
             android:exported="false" />
         <activity
-            android:name=".anima.rain.FallingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".label.EmotionLabelActivity"
-            android:exported="false" />
-        <activity
-            android:name=".icon.ExpendBoxActivity"
-            android:exported="false" />
-        <activity
-            android:name=".anima.alpha.NaturalAlphaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".flipper.CarouselDemoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".expend.entrance.FrsFloatEntranceActivity"
+            android:name="top.iqqcode.module.components.expend.entrance.FrsFloatEntranceActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

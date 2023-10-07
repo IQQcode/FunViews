@@ -3,8 +3,7 @@
 
     <application>
         <activity
-            android:name=".CoreMainActivity"
-            android:exported="true" />
+            android:name=".CoreMainActivity" />
     </application>
 
 </manifest>

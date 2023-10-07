@@ -5,7 +5,7 @@
     <application>
         <activity
             android:name=".LayoutActivity"
-            android:exported="true" />
+            android:exported="false" />
     </application>
 
 </manifest>

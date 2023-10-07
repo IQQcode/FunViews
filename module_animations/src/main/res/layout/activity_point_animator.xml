@@ -6,60 +6,71 @@
     android:layout_height="match_parent"
     tools:context="top.iqqcode.module.animations.values.PathAnimatorActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/optFragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="55dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:background="#4cd7f7" />
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/optFragmentContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginBottom="55dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:background="#4cd7f7" />-->
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="开始"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+<!--    <Button-->
+<!--        android:id="@+id/startButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="开始"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp" />-->
 
-    <Button
-        android:id="@+id/B"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="B"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+<!--    <Button-->
+<!--        android:id="@+id/B"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="B"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp" />-->
 
-    <Button
-        android:id="@+id/C"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="C"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+<!--    <Button-->
+<!--        android:id="@+id/C"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="C"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp" />-->
 
-    <Button
-        android:id="@+id/D"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="D"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+<!--    <Button-->
+<!--        android:id="@+id/D"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="D"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp" />-->
 
-    <androidx.constraintlayout.helper.widget.Flow
-        android:id="@+id/flow_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="startButton,B,C,D"
+<!--    <androidx.constraintlayout.helper.widget.Flow-->
+<!--        android:id="@+id/flow_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:constraint_referenced_ids="startButton,B,C,D"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintVertical_weight="1" />-->
+
+
+    <top.iqqcode.module.core.menu.CircleMenuView
+        android:id="@+id/circleMenu"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_weight="1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,16 @@
 plugins {
     id 'kotlin-kapt'
-    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
+// 注意gradle.properties中的数据类型都是String类型，使用其他数据类型需要自行转换
+if (isDebug.toBoolean()) {
+    // 构建后输出一个 APK 安装包
+    apply plugin: 'com.android.application'
+} else {
+    // 构建后输出 ARR 包
+    apply plugin: 'com.android.library'
+}
 android {
     namespace 'top.iqqcode.lib.common'
     compileSdk app_android.compileSdk

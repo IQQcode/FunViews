@@ -53,7 +53,6 @@ dependencies {
     if (isRelease) {
         implementation project(':lib_common')
         implementation project(':module_core')
-        implementation project(':module_main')
         implementation project(':module_layout')
         implementation project(':module_components')
         implementation project(':module_animations')

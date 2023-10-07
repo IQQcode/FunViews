@@ -3,9 +3,16 @@
     package="top.iqqcode.module.animations">
 
     <application>
+        <activity android:name=".AnimationMainActivity" />
         <activity
-            android:name=".AnimationMainActivity"
-            android:exported="true" />
+            android:name=".alpha.NaturalAlphaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".rain.FallingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".values.PathAnimatorActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
