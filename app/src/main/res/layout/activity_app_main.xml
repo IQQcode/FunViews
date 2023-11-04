@@ -191,9 +191,7 @@
     <!--            app:layout_constraintHorizontal_bias="0.496"-->
     <!--            app:layout_constraintStart_toStartOf="parent"-->
     <!--            app:layout_constraintTop_toBottomOf="@+id/eggFalling" />-->
-
     <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
-
 
     <top.iqqcode.module.core.weight.profile.MobikeView
         android:id="@+id/badgeView"
