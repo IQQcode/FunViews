@@ -1,4 +1,4 @@
-package top.iqqcode.module.core.menu;
+package top.iqqcode.module.core.weight.menu;
 
 /**
  * @Author: iqqcode

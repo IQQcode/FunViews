@@ -1,4 +1,4 @@
-package top.iqqcode.funviews.menu;
+package top.iqqcode.module.core.weight.menu;
 
 /**
  * @Author: iqqcode

@@ -1,7 +1,6 @@
-package top.iqqcode.module.core.profile;
+package top.iqqcode.module.core.weight.profile;
 
 import android.graphics.Canvas;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 

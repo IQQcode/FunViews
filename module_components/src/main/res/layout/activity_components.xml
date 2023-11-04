@@ -7,14 +7,73 @@
     tools:context=".ComponentsActivity">
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="自定义组件UI"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+
+    <TextView
+        android:id="@+id/tableSubList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#c3ff87"
+        android:gravity="center"
+        android:text="列表子菜单List"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/groupList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#c3ff87"
+        android:gravity="center"
+        android:text="分组列表"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tableSubGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#c3ff87"
+        android:gravity="center"
+        android:text="列表子菜单Grid"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listCeil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#c3ff87"
+        android:gravity="center"
+        android:text="吸顶列表"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tableSubList,groupList,tableSubGrid,listCeil"
+        app:flow_verticalGap="@dimen/tbds80"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.316"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

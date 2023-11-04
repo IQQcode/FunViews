@@ -1,197 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AppMainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:paddingBottom="20dp">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="自定义View基础"-->
+    <!--            android:textColor="#000"-->
+    <!--            android:textSize="22dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/customEditButton"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="43dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="自定义Clear EditText"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+
+
+    <!--        <Button-->
+    <!--            android:id="@+id/printButton"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="画布和画笔"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/customEditButton" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/expendButton"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="扩大View点击热区"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/printButton" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/floatExpendButton"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="收缩浮层View"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/expendButton" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/groupEntryButton"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="收缩浮层动画Demo"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/floatExpendButton" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/spreadButton"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="收缩浮层动画Demo"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/groupEntryButton" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/floatExpendBaseDemo"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="可伸展Layout"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/spreadButton" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/naturalAlphaDemo"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="自然过渡动画"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/floatExpendBaseDemo" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/carouselFloat"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="轮播Demo"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/naturalAlphaDemo" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/frsFloatExpendDemo"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="收缩浮层动画Demo"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/carouselFloat" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/iconSizeExpend"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="PB彩蛋雨"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/frsFloatExpendDemo" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/emotionLabel"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="表情标签"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/iconSizeExpend" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/eggFalling"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="群聊彩蛋雨"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/emotionLabel" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/pathAnimator"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="属性动画(中)"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.496"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/eggFalling" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <top.iqqcode.module.core.weight.profile.MobikeView
+        android:id="@+id/badgeView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="20dp">
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/circleMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="自定义View基础"
-            android:textColor="#000"
-            android:textSize="22dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <!--底部圆环菜单-->
+    <top.iqqcode.module.core.weight.menu.CircleMenuView
+        android:id="@+id/circleMenu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tbds900"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-        <Button
-            android:id="@+id/customEditButton"
-            android:layout_width="250dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="10dp"
-            android:text="自定义Clear EditText"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-
-        <Button
-            android:id="@+id/printButton"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="画布和画笔"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/customEditButton" />
-
-        <Button
-            android:id="@+id/expendButton"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="扩大View点击热区"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/printButton" />
-
-        <Button
-            android:id="@+id/floatExpendButton"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="收缩浮层View"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/expendButton" />
-
-        <Button
-            android:id="@+id/groupEntryButton"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="收缩浮层动画Demo"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/floatExpendButton" />
-
-        <Button
-            android:id="@+id/spreadButton"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="收缩浮层动画Demo"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/groupEntryButton" />
-
-        <Button
-            android:id="@+id/floatExpendBaseDemo"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="可伸展Layout"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spreadButton" />
-
-        <Button
-            android:id="@+id/naturalAlphaDemo"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="自然过渡动画"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/floatExpendBaseDemo" />
-
-        <Button
-            android:id="@+id/carouselFloat"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="轮播Demo"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/naturalAlphaDemo" />
-
-        <Button
-            android:id="@+id/frsFloatExpendDemo"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="收缩浮层动画Demo"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/carouselFloat" />
-
-        <Button
-            android:id="@+id/iconSizeExpend"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="PB彩蛋雨"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frsFloatExpendDemo" />
-
-        <Button
-            android:id="@+id/emotionLabel"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="表情标签"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iconSizeExpend" />
-
-        <Button
-            android:id="@+id/eggFalling"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="群聊彩蛋雨"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/emotionLabel" />
-
-        <Button
-            android:id="@+id/pathAnimator"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="属性动画(中)"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/eggFalling" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

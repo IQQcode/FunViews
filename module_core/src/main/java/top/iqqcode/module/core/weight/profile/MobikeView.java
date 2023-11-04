@@ -1,4 +1,4 @@
-package top.iqqcode.module.core.profile;
+package top.iqqcode.module.core.weight.profile;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -1,157 +1,86 @@
 package top.iqqcode.module.core
 
-import android.content.Context
 import android.graphics.Color
-import android.hardware.Sensor
-import android.hardware.SensorEvent
-import android.hardware.SensorEventListener
-import android.hardware.SensorManager
 import android.os.Bundle
-import android.util.Log
-import android.view.Gravity
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
-import android.widget.FrameLayout
-import android.widget.ImageView
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager.SpanSizeLookup
 import com.alibaba.android.arouter.facade.annotation.Route
 import top.iqqcode.lib.common.router.RouterAbility
+import top.iqqcode.module.core.data.AutoDetailData
 import top.iqqcode.module.core.databinding.ActivityCoreMainBinding
-import top.iqqcode.module.core.menu.OnMenuSelectedListener
-import top.iqqcode.module.core.menu.OnMenuStatusChangeListener
+import top.iqqcode.module.core.weight.list.CommonAdapter
 
 
-/** 工程项目UI框架 */
+/**
+ * 工程项目UI框架
+ *
+ * @constructor Create empty Core main activity
+ */
 @Route(path = RouterAbility.CORE_MAIN_FRAME)
 class CoreMainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityCoreMainBinding
+    private lateinit var mAdapter: CommonAdapter
 
-    private var sensorManager: SensorManager? = null
-    private var defaultSensor: Sensor? = null
-
-    // 重力墙icon
-    private val imgArgs = intArrayOf(
-        R.mipmap.share_wechat,
-        R.mipmap.share_wechat,
-        R.mipmap.share_wechat,
-        R.mipmap.share_wechat,
-        R.mipmap.share_wechat,
-        R.mipmap.share_wechat,
-        R.mipmap.share_wechat
-    )
-
-    private val mSensorListener: SensorEventListener = object : SensorEventListener {
-        override fun onSensorChanged(event: SensorEvent) {
-            if (event.sensor.type == Sensor.TYPE_ACCELEROMETER) {
-                val x = event.values[0]
-                val y = event.values[1] * 2.0f
-                binding.badgeView.getmMobike().onSensorChanged(-x, y)
-            }
-        }
-
-        override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {}
-    }
+    private val dataList: MutableList<AutoDetailData> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCoreMainBinding.inflate(layoutInflater)
+        requestWindowFeature(1)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        )
+        window.statusBarColor = Color.TRANSPARENT
         setContentView(binding.root)
 
+        initData()
         initView()
-        initCircleMenu()
-        initBadges()
-
-        sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
-        defaultSensor = sensorManager?.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
     }
 
     private fun initView() {
-        actionBar?.setDisplayHomeAsUpEnabled(true)
-        binding.badgeView.setOnClickListener(this)
-    }
+        val layoutManager = GridLayoutManager(this, 2)
+        binding.recyclerCoreView.layoutManager = layoutManager
+        mAdapter = CommonAdapter(this, 1, 1)
+        mAdapter.setData(dataList)
+        binding.recyclerCoreView.adapter = mAdapter
 
-    private fun initBadges() {
-        val layoutParams = FrameLayout.LayoutParams(
-            FrameLayout.LayoutParams.WRAP_CONTENT,
-            FrameLayout.LayoutParams.WRAP_CONTENT
-        )
-        layoutParams.gravity = Gravity.CENTER
-        for (i in imgArgs.indices) {
-            val imageView = ImageView(this)
-            imageView.setImageResource(imgArgs[i])
-            imageView.setTag(R.id.mobike_view_circle_tag, true)
-            binding.badgeView.addView(imageView, layoutParams)
+        // 真正处理item点击事件
+        mAdapter.setOnItemClickListener(object : CommonAdapter.OnItemClickListener {
+            override fun onItemClick(position: Int) {
+                //ARouter.getInstance().build(RouterAbility.LAYOUT_MAIN).navigation()
+            }
+        })
+
+        // 这里注意一点，如果你的RecyclerView使用Grid类型列表在设置Adapter后需要调用这个方法，
+        // 根据当前Item类型来判断占据的横向格数，这也是Adapter里面实现isHeaderView和isBottomView的缘故
+        layoutManager.spanSizeLookup = object : SpanSizeLookup() {
+            override fun getSpanSize(position: Int): Int {
+                return if (mAdapter.isHeaderView(position) || mAdapter.isBottomView(position)) layoutManager.spanCount else 1
+            }
         }
-    }
-
-    /** 初始化菜单动效 */
-    private fun initCircleMenu() {
-        binding.circleMenu.setMainMenu(
-            Color.parseColor("#CDCDCD"),
-            R.mipmap.icon_menu,
-            R.mipmap.icon_cancel
-        )
-            .addSubMenu(Color.parseColor("#258CFF"), R.mipmap.icon_home)
-            .addSubMenu(Color.parseColor("#30A400"), R.mipmap.icon_search)
-            .addSubMenu(Color.parseColor("#FF4B32"), R.mipmap.icon_notify)
-            .addSubMenu(Color.parseColor("#8A39FF"), R.mipmap.icon_setting)
-            .addSubMenu(Color.parseColor("#FF6A00"), R.mipmap.icon_gps)
-            .setOnMenuSelectedListener(OnMenuSelectedListener {
-                Log.i("JIAZIHUI", "initCircleMenu: $it")
-            })
-            .setOnMenuStatusChangeListener(object : OnMenuStatusChangeListener {
-                override fun onMenuOpened() {
-
-                }
-
-                override fun onMenuClosed() {
-
-                }
-            })
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == android.R.id.home) {
-            finish()
-        }
-        return super.onOptionsItemSelected(item)
-    }
-
-
-    override fun onMenuOpened(featureId: Int, menu: Menu): Boolean {
-        binding.circleMenu.openMenu()
-        return super.onMenuOpened(featureId, menu)
-    }
-
-    override fun onStart() {
-        super.onStart()
-        binding.badgeView.getmMobike()?.onStart()
-    }
-
-    override fun onStop() {
-        super.onStop()
-        binding.badgeView.getmMobike()?.onStop()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        sensorManager?.registerListener(
-            mSensorListener,
-            defaultSensor,
-            SensorManager.SENSOR_DELAY_UI
-        )
-    }
-
-    override fun onPause() {
-        super.onPause()
-        sensorManager?.unregisterListener(mSensorListener)
     }
 
     override fun onClick(view: View?) {
-        when(view?.id) {
-            R.id.badgeView -> binding.circleMenu.closeMenu()
+        when (view?.id) {
+
+        }
+    }
+
+    private fun initData() {
+        for (i in 0..20) {
+            dataList.add(
+                AutoDetailData(
+                    "Transport",
+                    "彩蛋雨动画哈哈哈哈",
+                    top.iqqcode.lib.common.R.drawable.bills_img_background,
+                    top.iqqcode.lib.common.R.drawable.invoice
+                )
+            )
         }
     }
 }

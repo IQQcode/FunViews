@@ -4,15 +4,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Route
 import top.iqqcode.lib.common.router.RouterAbility
+import top.iqqcode.module.animations.databinding.ActivityMainAnimationBinding
 
-
-// 在支持路由的页面上添加注解(必选)
-// 这里的路径需要注意的是至少需要有两级，/xx/xx
 @Route(path = RouterAbility.ANIMATIONS_MAIN)
 class AnimationMainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainAnimationBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_animation_main)
-
+        binding = ActivityMainAnimationBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }
