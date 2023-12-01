@@ -4,6 +4,9 @@
 
     <application>
         <activity
+            android:name=".mark.MarkActivity"
+            android:exported="false" />
+        <activity
             android:name=".LayoutActivity"
             android:exported="false" />
     </application>

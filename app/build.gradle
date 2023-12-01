@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace 'top.iqqcode.funviews'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "top.iqqcode.funviews"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
