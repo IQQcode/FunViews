@@ -18,6 +18,7 @@ import android.widget.ImageView
 import com.alibaba.android.arouter.launcher.ARouter
 import top.iqqcode.lib.common.router.RouterAbility
 import top.iqqcode.funviews.databinding.ActivityAppMainBinding
+import top.iqqcode.lib.common.util.UtilHelper
 import top.iqqcode.module.core.weight.menu.OnMenuSelectedListener
 import top.iqqcode.module.core.weight.menu.OnMenuStatusChangeListener
 import top.iqqcode.module.core.weight.menu.SubMenuOptions
