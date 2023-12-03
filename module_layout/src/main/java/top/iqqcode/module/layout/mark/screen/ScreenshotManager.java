@@ -11,9 +11,6 @@ import android.view.WindowManager;
 
 
 /**
- * Created by Distant Place
- * Data : 2018/12/18 10:32
- * E-Mail: 605322850@qq.com
  * Desc :  截图
  */
 public class ScreenshotManager {

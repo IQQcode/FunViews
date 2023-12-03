@@ -9,9 +9,6 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 
 /**
- * Created by Distant Place
- * Data : 2018/12/18 10:32
- * E-Mail: 605322850@qq.com
  * Desc :  添加图片水印
  */
 public class WatermarkBitmapUtil {

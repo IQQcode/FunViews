@@ -3,9 +3,6 @@ package top.iqqcode.module.layout.mark.screen;
 import android.graphics.Bitmap;
 
 /**
- * Created by Distant Place
- * Data : 2018/12/18 10:39
- * E-Mail: 605322850@qq.com
  * Desc :
  */
 public class ScreenshotBean {

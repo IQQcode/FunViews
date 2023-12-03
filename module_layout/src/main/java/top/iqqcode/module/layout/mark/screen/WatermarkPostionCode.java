@@ -1,9 +1,6 @@
 package top.iqqcode.module.layout.mark.screen;
 
 /**
- * Created by Distant Place
- * Data : 2018/12/18 14:26
- * E-Mail: 605322850@qq.com
  * Desc :  水印位置
  */
 public class WatermarkPostionCode {
