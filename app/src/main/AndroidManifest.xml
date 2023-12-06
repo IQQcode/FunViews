@@ -28,21 +28,21 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".expend.hotspot.ExpendBaseDemoActivity"
+            android:name="top.iqqcode.module.components.expend.hotspot.ExpendBaseDemoActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".floats.FloatExpandActivity"
+            android:name="top.iqqcode.module.components.floats.FloatExpandActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".floats.IMGroupEntryActivity"
+            android:name="top.iqqcode.module.components.floats.IMGroupEntryActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -66,6 +66,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="DEBUG_APK_UPGRADE_KIT"
+            android:value="${DEBUG_APK_UPGRADE_KIT}" />
+
     </application>
 
 </manifest>

@@ -28,6 +28,7 @@ android {
                 arg("AROUTER_MODULE_NAME": project.getName())
             }
         }
+        manifestPlaceholders = [DEBUG_APK_UPGRADE_KIT: "&{master}&{123456}"]
     }
 
     buildTypes {

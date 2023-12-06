@@ -18,6 +18,7 @@ import android.widget.ImageView
 import com.alibaba.android.arouter.launcher.ARouter
 import top.iqqcode.lib.common.router.RouterAbility
 import top.iqqcode.funviews.databinding.ActivityAppMainBinding
+import top.iqqcode.funviews.metas.MetaDataManager
 import top.iqqcode.lib.common.util.UtilHelper
 import top.iqqcode.module.core.weight.menu.OnMenuSelectedListener
 import top.iqqcode.module.core.weight.menu.OnMenuStatusChangeListener
@@ -34,6 +35,7 @@ class AppMainActivity : AppCompatActivity(), View.OnClickListener {
 
     private var sensorManager: SensorManager? = null
     private var defaultSensor: Sensor? = null
+    private lateinit var mataManager: MetaDataManager
 
     private val mSensorListener: SensorEventListener = object : SensorEventListener {
         override fun onSensorChanged(event: SensorEvent) {
@@ -70,7 +72,7 @@ class AppMainActivity : AppCompatActivity(), View.OnClickListener {
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
         defaultSensor = sensorManager?.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
-        // initClick()
+        mataManager = MetaDataManager(this)
     }
 
     private fun initView() {
@@ -126,6 +128,7 @@ class AppMainActivity : AppCompatActivity(), View.OnClickListener {
                     SubMenuOptions.MODULE_CORE_MAIN -> {
                         // 应用内简单的跳转(通过URL跳转在'进阶用法'中)
                         ARouter.getInstance().build(RouterAbility.CORE_MAIN_FRAME).navigation()
+                        mataManager.getApkInfo()
                     }
 
                     SubMenuOptions.MODULE_LAYOUT -> {
