@@ -57,7 +57,10 @@ dependencies {
         implementation project(':module_layout')
         implementation project(':module_components')
         implementation project(':module_animations')
+        implementation project(':linkage-recyclerview')
     }
+
+    implementation project(':linkage-recyclerview')
 
     implementation libARouter
     kapt libARouterCompiler

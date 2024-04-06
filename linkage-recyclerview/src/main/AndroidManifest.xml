@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kunminx.linkage">
+
+    <application>
+        <activity
+            android:name="com.kunminx.linkage.LinkageActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

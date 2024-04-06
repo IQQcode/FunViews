@@ -22,4 +22,6 @@ object SubMenuOptions {
     // 动画模块
     const val MODULE_ANIMATIONS = 3
 
+    // 三方模块
+    const val MODULE_LINKAGE_RECYCLERVIEW = 4
 }
