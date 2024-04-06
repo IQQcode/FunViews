@@ -21,6 +21,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
+import top.iqqcode.lib.common.router.ComponentsRouter;
 import top.iqqcode.lib.common.util.UtilHelper;
 import top.iqqcode.module.components.R;
 import top.iqqcode.module.components.util.MockDataUtil;
@@ -29,6 +32,7 @@ import top.iqqcode.module.components.util.MockDataUtil;
  * @author jiazihui
  * Frs群聊入口
  */
+@Route(path = ComponentsRouter.FRS_FLOAT_ENTRANCE_ACTIVITY)
 public class FrsFloatEntranceActivity extends AppCompatActivity implements Animation.AnimationListener, View.OnClickListener {
 
     private CardViewLayout mChatGroupEntranceFloat;

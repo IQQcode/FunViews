@@ -41,8 +41,8 @@ class AppMainActivity : AppCompatActivity(), View.OnClickListener {
         ) { tab: TabLayout.Tab, position: Int ->
             tab.setText(
                 mFragmentTitles[position]
-                    .replace("SampleFragment", "")
-                    .replace("[A-Z]".toRegex(), " $0")
+//                    .replace("SampleFragment", "")
+//                    .replace("[A-Z]".toRegex(), " $0")
             )
         }.attach()
     }

@@ -1,6 +1,9 @@
 package top.iqqcode.funviews.ui;
 
+import static top.iqqcode.lib.common.util.JSONConfigRender.readJsonFromAssets;
+
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,11 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.kunminx.linkage.LinkageRecyclerView;
-import com.kunminx.linkage.bean.BaseGroupedItem;
 import com.kunminx.linkage.bean.DefaultGroupedItem;
 
 import java.util.List;
@@ -47,7 +50,8 @@ public class RxMagicSampleFragment extends Fragment {
     private void initLinkageData(LinkageRecyclerView linkageView) {
         Gson gson = new Gson();
         // 构造数据
-        List<DefaultGroupedItem> items = gson.fromJson(getString(R.string.operators_json),
+        String jsonStr = readJsonFromAssets(requireContext(), "main_catalogue.json");
+        List<DefaultGroupedItem> items = gson.fromJson(jsonStr,
                 new TypeToken<List<DefaultGroupedItem>>() {
                 }.getType());
 
@@ -65,6 +69,11 @@ public class RxMagicSampleFragment extends Fragment {
                         int position = secondaryHolder.getAdapterPosition();
                         String route = item.info.getRoute();
                         Snackbar.make(v, item.info.getTitle(), Snackbar.LENGTH_SHORT).show();
+                        // 应用内简单的跳转(通过URL跳转在'进阶用法'中)
+                        ARouter.getInstance().build(item.info.getRoute()).navigation();
+                        // String jsonStr = readJsonFromAssets(requireContext(), "main_catalogue.json");
+                        // 现在你可以使用jsonStr变量来访问JSON字符串
+                        Log.d("JIAZIHUI", "initLinkageData: " + jsonStr);
                     });
                 },
                 (headerHolder, item) -> {

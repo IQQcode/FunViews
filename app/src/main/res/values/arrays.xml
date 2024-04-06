@@ -2,10 +2,10 @@
 <resources>
 
     <string-array name="fragments">
-        <item name="rx_magic">RxMagicSampleFragment</item>
-        <item name="custom_json">CustomJsonSampleFragment</item>
-        <item name="eleme">ElemeSampleFragment</item>
-        <item name="switch">SwitchSampleFragment</item>
+        <item name="rx_magic">自定义View</item>
+        <item name="custom_json">动画</item>
+        <item name="eleme">Layout</item>
+        <item name="switch">Views</item>
         <item name="custom_header">CustomHeaderSampleFragment</item>
         <item name="custom_decoration">CustomDecorationSampleFragment</item>
         <item name="dialog">DialogSampleFragment</item>

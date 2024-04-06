@@ -14,7 +14,6 @@ class ComponentsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityComponentsBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityComponentsBinding.inflate(layoutInflater)

@@ -29,7 +29,7 @@
 // *
 // * @constructor Create empty App main activity
 // */
-//class AppMainActivity : AppCompatActivity(), View.OnClickListener {
+//class AppTempMainActivity : AppCompatActivity(), View.OnClickListener {
 //
 //    private lateinit var binding: ActivityAppMainBinding
 //
