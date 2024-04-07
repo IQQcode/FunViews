@@ -1,10 +1,19 @@
 package top.iqqcode.lib.common.router
 
 import androidx.annotation.StringDef
+import top.iqqcode.lib.common.router.ComponentsRouter.Companion.CAROUSEL_DEMO_ACTIVITY
+import top.iqqcode.lib.common.router.ComponentsRouter.Companion.EMOTION_LABEL_ACTIVITY
+import top.iqqcode.lib.common.router.ComponentsRouter.Companion.EXPEND_BASE_DEMO_ACTIVITY
+import top.iqqcode.lib.common.router.ComponentsRouter.Companion.EXPEND_BOX_ACTIVITY
+import top.iqqcode.lib.common.router.ComponentsRouter.Companion.EXPEND_CLICK_ACTIVITY
+import top.iqqcode.lib.common.router.ComponentsRouter.Companion.FLOAT_EXPEND_ACTIVITY
 import top.iqqcode.lib.common.router.ComponentsRouter.Companion.FRS_FLOAT_ENTRANCE_ACTIVITY
+import top.iqqcode.lib.common.router.ComponentsRouter.Companion.IM_GROUP_ENTRY_ACTIVITY
+import top.iqqcode.lib.common.router.ComponentsRouter.Companion.SPREAD_ACTIVITY
+import top.iqqcode.lib.common.router.ComponentsRouter.Companion.TABLE_SUB_LIST_ACTIVITY
 
 /**
- * Components router
+ * Components router 自定义View路由
  *
  * @constructor Create empty Components router
  */
@@ -12,7 +21,18 @@ import top.iqqcode.lib.common.router.ComponentsRouter.Companion.FRS_FLOAT_ENTRAN
 @Target(AnnotationTarget.VALUE_PARAMETER, AnnotationTarget.FIELD, AnnotationTarget.FUNCTION)
 @MustBeDocumented
 @Retention(AnnotationRetention.SOURCE)
-@StringDef(FRS_FLOAT_ENTRANCE_ACTIVITY)
+@StringDef(
+    FRS_FLOAT_ENTRANCE_ACTIVITY,
+    EXPEND_BASE_DEMO_ACTIVITY,
+    EXPEND_CLICK_ACTIVITY,
+    SPREAD_ACTIVITY,
+    CAROUSEL_DEMO_ACTIVITY,
+    FLOAT_EXPEND_ACTIVITY,
+    IM_GROUP_ENTRY_ACTIVITY,
+    EXPEND_BOX_ACTIVITY,
+    EMOTION_LABEL_ACTIVITY,
+    TABLE_SUB_LIST_ACTIVITY
+)
 annotation class ComponentsRouter {
     companion object {
         const val FRS_FLOAT_ENTRANCE_ACTIVITY = "/components/FrsFloatEntranceActivity"
