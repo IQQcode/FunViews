@@ -6,6 +6,8 @@ import android.view.TouchDelegate
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.alibaba.android.arouter.facade.annotation.Route
+import top.iqqcode.lib.common.router.ComponentsRouter
 import top.iqqcode.lib.common.util.UtilHelper
 import top.iqqcode.module.components.databinding.ActivityExpendClickBinding
 
@@ -15,6 +17,7 @@ import top.iqqcode.module.components.databinding.ActivityExpendClickBinding
  *
  * @constructor Create empty Expend click activity
  */
+@Route(path = ComponentsRouter.EXPEND_CLICK_ACTIVITY)
 class ExpendClickActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityExpendClickBinding

@@ -8,12 +8,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
 import java.util.ArrayList;
 import java.util.List;
 
+import top.iqqcode.lib.common.router.ComponentsRouter;
 import top.iqqcode.module.components.R;
 
-
+@Route(path = ComponentsRouter.EMOTION_LABEL_ACTIVITY)
 public class EmotionLabelActivity extends AppCompatActivity {
 
     private RecyclerView mHorizontalTagRecyclerView;

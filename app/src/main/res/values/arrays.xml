@@ -6,12 +6,12 @@
         <item name="custom_json">动画</item>
         <item name="eleme">Layout</item>
         <item name="switch">Views</item>
-        <item name="custom_header">CustomHeaderSampleFragment</item>
-        <item name="custom_decoration">CustomDecorationSampleFragment</item>
-        <item name="dialog">DialogSampleFragment</item>
-        <item name="bottom_sheet">BottomSheetSampleFragment</item>
-        <item name="much_level1_item">MuchPrimaryItemSampleFragment</item>
-        <item name="less_level1_item">LessPrimaryItemSampleFragment</item>
+        <item name="custom_header">分类</item>
+        <item name="custom_decoration">分类</item>
+        <item name="dialog">分类</item>
+        <item name="bottom_sheet">分类</item>
+        <item name="much_level1_item">分类</item>
+        <item name="less_level1_item">分类</item>
     </string-array>
 
     <string-array name="fragments_full_path">

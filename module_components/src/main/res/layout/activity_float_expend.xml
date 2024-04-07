@@ -61,7 +61,7 @@
             android:layout_marginTop="20dp"
             android:text="按钮在左侧" />
 
-        <top.iqqcode.funviews.floats.view.HorizontalExpandMenu
+        <top.iqqcode.module.components.floats.view.HorizontalExpandMenu
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
@@ -96,7 +96,7 @@
                     android:gravity="center"
                     android:text="item3" />
             </LinearLayout>
-        </top.iqqcode.funviews.floats.view.HorizontalExpandMenu>
+        </top.iqqcode.module.components.floats.view.HorizontalExpandMenu>
 
         <TextView
             android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
             android:layout_marginTop="20dp"
             android:text="可设置圆角、描边、阴影、按钮的颜色等等" />
 
-        <top.iqqcode.funviews.floats.view.HorizontalExpandMenu
+        <top.iqqcode.module.components.floats.view.HorizontalExpandMenu
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
@@ -143,7 +143,7 @@
                     android:gravity="center"
                     android:text="item3" />
             </LinearLayout>
-        </top.iqqcode.funviews.floats.view.HorizontalExpandMenu>
+        </top.iqqcode.module.components.floats.view.HorizontalExpandMenu>
 
         <TextView
             android:layout_width="wrap_content"
@@ -152,7 +152,7 @@
             android:layout_marginTop="20dp"
             android:text="可自定义菜单栏里的内容，但只能设置一个直接子元素" />
 
-        <top.iqqcode.funviews.floats.view.HorizontalExpandMenu
+        <top.iqqcode.module.components.floats.view.HorizontalExpandMenu
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
@@ -202,7 +202,7 @@
 
             </HorizontalScrollView>
 
-        </top.iqqcode.funviews.floats.view.HorizontalExpandMenu>
+        </top.iqqcode.module.components.floats.view.HorizontalExpandMenu>
 
     </LinearLayout>
 

@@ -6,6 +6,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
+import top.iqqcode.lib.common.router.ComponentsRouter;
 import top.iqqcode.module.animations.rain.FallingData;
 import top.iqqcode.module.animations.rain.PbFallingView;
 import top.iqqcode.module.components.R;
@@ -13,6 +16,7 @@ import top.iqqcode.module.components.R;
 /**
  * 用户icon标识可拓展
  */
+@Route(path = ComponentsRouter.EXPEND_BOX_ACTIVITY)
 public class ExpendBoxActivity extends AppCompatActivity implements View.OnClickListener {
 
     private PbFallingView mPbFallingView;

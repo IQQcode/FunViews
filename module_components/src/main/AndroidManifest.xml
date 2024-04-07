@@ -12,6 +12,33 @@
         <activity
             android:name=".edittext.CustomTextActivity"
             android:exported="false" />
+        <activity
+            android:name=".expend.entrance.FrsFloatEntranceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".expend.hotspot.ExpendBaseDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".expend.hotspot.ExpendClickActivity"
+            android:exported="false" />
+        <activity
+            android:name=".expend.spread.SpreadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".flipper.CarouselDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".floats.FloatExpandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".floats.IMGroupEntryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".icon.ExpendBoxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".label.EmotionLabelActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

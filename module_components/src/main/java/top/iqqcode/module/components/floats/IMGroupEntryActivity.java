@@ -13,9 +13,12 @@ import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
 import java.util.ArrayList;
 import java.util.List;
 
+import top.iqqcode.lib.common.router.ComponentsRouter;
 import top.iqqcode.module.components.R;
 import top.iqqcode.module.components.floats.demo.ExpandButtonLayout;
 
@@ -23,6 +26,7 @@ import top.iqqcode.module.components.floats.demo.ExpandButtonLayout;
 /**
  * @author jiazihui
  */
+@Route(path = ComponentsRouter.IM_GROUP_ENTRY_ACTIVITY)
 public class IMGroupEntryActivity extends AppCompatActivity implements View.OnClickListener {
     private Context context;
     private ViewFlipper viewFlipper;

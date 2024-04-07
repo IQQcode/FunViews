@@ -11,8 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
 import java.util.Timer;
 import java.util.TimerTask;
+
+import top.iqqcode.lib.common.router.ComponentsRouter;
 import top.iqqcode.lib.common.util.UtilHelper;
 import top.iqqcode.module.components.R;
 
@@ -22,6 +26,7 @@ import top.iqqcode.module.components.R;
  * @author jiazihui
  * https://blog.csdn.net/qq_35928566/article/details/102744519
  */
+@Route(path = ComponentsRouter.EXPEND_BASE_DEMO_ACTIVITY)
 public class ExpendBaseDemoActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mShowAnniButton;

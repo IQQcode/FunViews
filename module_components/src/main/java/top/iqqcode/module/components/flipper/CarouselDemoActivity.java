@@ -9,6 +9,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
+import top.iqqcode.lib.common.router.ComponentsRouter;
 import top.iqqcode.module.components.R;
 import top.iqqcode.module.components.util.MockDataUtil;
 
@@ -16,6 +19,7 @@ import top.iqqcode.module.components.util.MockDataUtil;
 /**
  * @author jiazihui
  */
+@Route(path = ComponentsRouter.CAROUSEL_DEMO_ACTIVITY)
 public class CarouselDemoActivity extends AppCompatActivity {
 
     private AdapterViewFlipper mViewFlipper;
