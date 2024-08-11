@@ -2,15 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="top.iqqcode.module.layout">
 
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-    <!--相机权限-->
-    <uses-permission android:name="android.permission.CAMERA" />
-    <!--访问外部权限-->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 访问外部权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application>
         <activity
-            android:name=".mark.MarkActivity"
+            android:name=".event.Demo01EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".print.mark.MarkActivity"
             android:exported="false" />
         <activity
             android:name=".LayoutActivity"

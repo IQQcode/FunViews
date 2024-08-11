@@ -8,7 +8,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import top.iqqcode.lib.common.router.RouterAbility
 import top.iqqcode.module.layout.databinding.ActivityLayoutBinding
 import top.iqqcode.module.layout.databinding.ActivityPrintBinding
-import top.iqqcode.module.layout.mark.MarkActivity
+import top.iqqcode.module.layout.print.mark.MarkActivity
 import top.iqqcode.module.layout.print.PrintActivity
 
 

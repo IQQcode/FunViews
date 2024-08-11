@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2ecc71"
+    tools:context=".event.Demo01EventActivity">
+
+
+    <top.iqqcode.module.layout.event.ViewGroupOne
+        android:id="@+id/viewGroup1"
+        android:layout_width="350dp"
+        android:layout_height="436dp"
+        android:background="#ff7675"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403">
+
+        <top.iqqcode.module.layout.event.ViewGroupTwo
+            android:id="@+id/viewGroup2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:background="#1e90ff"
+            tools:ignore="UselessLeaf">
+
+            <top.iqqcode.module.layout.event.ViewExtension
+                android:id="@+id/view"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="#ffeaa7" />
+
+        </top.iqqcode.module.layout.event.ViewGroupTwo>
+
+    </top.iqqcode.module.layout.event.ViewGroupOne>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

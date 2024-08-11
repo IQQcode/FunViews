@@ -1,4 +1,4 @@
-package top.iqqcode.module.layout.mark
+package top.iqqcode.module.layout.print.mark
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -13,11 +13,11 @@ import com.permissionx.guolindev.callback.ExplainReasonCallback
 import com.permissionx.guolindev.callback.RequestCallback
 import top.iqqcode.module.layout.R
 import top.iqqcode.module.layout.databinding.ActivityMarkBinding
-import top.iqqcode.module.layout.mark.screen.IScreenshotCallBack
-import top.iqqcode.module.layout.mark.screen.ScreenshotBean
-import top.iqqcode.module.layout.mark.screen.ScreenshotManager
-import top.iqqcode.module.layout.mark.screen.WatermarkPostionCode
-import top.iqqcode.module.layout.mark.utils.ImgUtlis
+import top.iqqcode.module.layout.print.mark.screen.IScreenshotCallBack
+import top.iqqcode.module.layout.print.mark.screen.ScreenshotBean
+import top.iqqcode.module.layout.print.mark.screen.ScreenshotManager
+import top.iqqcode.module.layout.print.mark.screen.WatermarkPostionCode
+import top.iqqcode.module.layout.print.mark.utils.ImgUtlis
 
 /**
  * 添加水印
