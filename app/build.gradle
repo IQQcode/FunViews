@@ -57,6 +57,7 @@ dependencies {
         implementation project(':module_layout')
         implementation project(':module_components')
         implementation project(':module_animations')
+        implementation project(':module_frameworks')
         implementation project(':linkage-recyclerview')
     }
 
