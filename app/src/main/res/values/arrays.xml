@@ -4,9 +4,9 @@
     <string-array name="fragments">
         <item name="rx_magic">自定义View</item>
         <item name="custom_json">动画</item>
-        <item name="eleme">Layout</item>
+        <item name="layout">Layout</item>
         <item name="switch">Views</item>
-        <item name="custom_header">分类</item>
+        <item name="frameworks">Frameworks</item>
         <item name="custom_decoration">分类</item>
         <item name="dialog">分类</item>
         <item name="bottom_sheet">分类</item>
@@ -17,9 +17,9 @@
     <string-array name="fragments_full_path">
         <item name="rx_magic">"top.iqqcode.funviews.ui.RxMagicSampleFragment"</item>
         <item name="custom_json">"com.kunminx.linkagelistview.ui.CustomJsonSampleFragment"</item>
-        <item name="eleme">"com.kunminx.linkagelistview.ui.ElemeSampleFragment"</item>
+        <item name="layout">"com.kunminx.linkagelistview.ui.ElemeSampleFragment"</item>
         <item name="switch">"com.kunminx.linkagelistview.ui.SwitchSampleFragment"</item>
-        <item name="custom_header">"com.kunminx.linkagelistview.ui.CustomHeaderSampleFragment"</item>
+        <item name="frameworks">"top.iqqcode.funviews.ui.FrameworksFragment"</item>
         <item name="custom_decoration">"com.kunminx.linkagelistview.ui.CustomDecorationSampleFragment"</item>
         <item name="dialog">"com.kunminx.linkagelistview.ui.DialogSampleFragment"</item>
         <item name="bottom_sheet">"com.kunminx.linkagelistview.ui.BottomSheetSampleFragment"</item>
