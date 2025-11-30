@@ -70,8 +70,8 @@ dependencies {
     annotationProcessor 'com.google.dagger:hilt-compiler:2.40.1'
 
     // https://xingyun.xiaojukeji.com/docs/dokit/#/androidGuide
-    debugImplementation 'io.github.didi.dokit:dokitx:3.5.0'
-    releaseImplementation 'io.github.didi.dokit:dokitx-no-op:3.5.0'
+    debugImplementation 'io.github.didi.dokit:dokitx:3.7.11'
+    releaseImplementation 'io.github.didi.dokit:dokitx-no-op:3.7.11'
 
 
     implementation 'androidx.appcompat:appcompat:1.6.1'

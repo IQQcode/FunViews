@@ -35,6 +35,7 @@ annotation class RouterAbility {
         // components
         const val COMPONENTS_MAIN = "/components/ComponentsActivity"
         const val COMPONENTS_CUSTOM_TEXT = "/components/CustomTextActivity"
+        const val COMPONENTS_DOCK_BAR = "/components/DockBarActivity"
 
 
         // layout

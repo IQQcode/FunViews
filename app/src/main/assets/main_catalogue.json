@@ -107,15 +107,16 @@
     }
   },
   {
-    "header": "Combining",
+    "header": "自定义手势交互",
     "isHeader": true
   },
   {
     "isHeader": false,
     "info": {
-      "content": "Combine multiple observers, and merge events",
-      "group": "Combining",
-      "title": "concatArray"
+      "content": "Dock栏模仿，微博触动点赞效果",
+      "route": "/components/DockBarActivity",
+      "group": "custom_event",
+      "title": "Dock栏模仿"
     }
   },
   {
