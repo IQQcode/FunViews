@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".docks.DockBarActivity">
+    android:background="#FF1541F9"
+    android:clipChildren="false"> <!-- 允许内容画在屏幕外（如果有必要） -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- 背景 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_bg" />
+
+    <!--
+       Dock 容器的容器
+       作用：利用 center_horizontal 自动处理居中，
+       当内部 dock_bar 变宽时，它会自动向两边均匀延伸，
+       彻底替代了手动的 translationX，解决了溢出问题。
+    -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:clipChildren="false">
+
+        <!-- Dock Bar -->
+        <!--
+             高度：固定为 wrap_content 或者一个具体值。
+             由于代码中 Item 的高度固定为 baseWidth，所以这里的高度也是稳定的。
+             背景会随着宽度变化自动拉伸。
+        -->
+        <LinearLayout
+            android:id="@+id/dock_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dock_background"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:elevation="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <!-- 代码添加子 View -->
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
