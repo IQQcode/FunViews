@@ -25,6 +25,7 @@ import kotlin.math.abs
  * @Author: iqqcode
  * @Date: 2025-11-30 09:38
  * @Description: Dock效果模仿
+ * Dock栏H5效果实现：https://codepen.io/mnilzg/pen/oNBvXxB
  */
 @Route(path = RouterAbility.COMPONENTS_DOCK_BAR)
 class DockBarActivity : AppCompatActivity() {
