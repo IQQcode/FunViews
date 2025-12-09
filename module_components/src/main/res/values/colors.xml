@@ -10,4 +10,11 @@
     <color name="CAM_X0207">#FFFFFFFF</color>
     <color name="CAM_X0804">#33928DA8</color>
     <color name="transparent">#00000000</color>
+    <color name="purple_500">#FF6200EE</color>
+    <!-- 粒子糖果色 -->
+    <color name="pop_pink">#FF69B4</color>
+    <color name="pop_yellow">#FFD700</color>
+    <color name="pop_purple">#9370DB</color>
+    <color name="pop_cyan">#00CED1</color>
+    <color name="pop_red">#FF4500</color>
 </resources>

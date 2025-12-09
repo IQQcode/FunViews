@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1A"
+    android:id="@+id/easter_root"
+    tools:context=".agree.EasterAgreeActivity">
+
+    <!-- 模拟视频内容背景 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Video Content Area"
+        android:textColor="#555555" />
+
+    <!-- 底部操作栏区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal"
+        android:paddingEnd="20dp">
+
+        <!-- 点赞按钮 -->
+        <!-- id设为 like_trigger -->
+        <ImageView
+            android:id="@+id/like_trigger"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_like_btn_normal" />
+    </LinearLayout>
+
+    <!-- 全屏粒子特效层 -->
+    <!-- 注意：这个类我们在第二步创建，全名要替换为你实际的包名 -->
+    <!-- 这里先写 com.example.app.SuperLikeView，请根据实际情况修改 -->
+    <top.iqqcode.module.components.agree.SuperLikeView
+        android:id="@+id/super_like_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+</FrameLayout>

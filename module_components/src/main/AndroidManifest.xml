@@ -4,6 +4,9 @@
 
     <application>
         <activity
+            android:name=".agree.EasterAgreeActivity"
+            android:exported="false" />
+        <activity
             android:name=".docks.DockBarActivity"
             android:exported="false" />
         <activity
