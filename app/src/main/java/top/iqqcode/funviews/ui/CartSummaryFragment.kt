@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import top.iqqcode.funviews.R
 import top.iqqcode.lib.common.bean.CartItem
+import top.iqqcode.lib.common.util.MoneyFormatter
 import top.iqqcode.module.core.cart.CartRepository
 import top.iqqcode.module.core.cart.CheckoutCalculator
 
@@ -32,10 +33,8 @@ class CartSummaryFragment : Fragment() {
 
     private fun render(view: View, items: List<CartItem>) {
         val result = calculator.compute(items, member = true)
-        view.findViewById<TextView>(R.id.cart_goods_total).text = format(result.goodsInCents)
-        view.findViewById<TextView>(R.id.cart_reduction).text = "-${format(result.reductionInCents)}"
-        view.findViewById<TextView>(R.id.cart_payable).text = format(result.payableInCents)
+        view.findViewById<TextView>(R.id.cart_goods_total).text = MoneyFormatter.format(result.goodsInCents)
+        view.findViewById<TextView>(R.id.cart_reduction).text = MoneyFormatter.formatReduction(result.reductionInCents)
+        view.findViewById<TextView>(R.id.cart_payable).text = MoneyFormatter.format(result.payableInCents)
     }
-
-    private fun format(cents: Long) = "¥%.2f".format(cents / 100.0)
 }
