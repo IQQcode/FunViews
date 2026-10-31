@@ -31,3 +31,11 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# mgit 组件仓：以下目录各自持有独立 .git，由组件仓自行管理，壳工程不纳管
+/lib_common/
+/module_core/
+/module_layout/
+/module_components/
+/module_animations/
+/module_frameworks/
