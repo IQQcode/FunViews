@@ -1,0 +1,7 @@
+~/Documents/Code/FunViews
+~/Documents/Code/FunViews/lib_common
+~/Documents/Code/FunViews/module_core
+~/Documents/Code/FunViews/module_layout
+~/Documents/Code/FunViews/module_components
+~/Documents/Code/FunViews/module_animations
+~/Documents/Code/FunViews/module_frameworks
