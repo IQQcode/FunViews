@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <top.iqqcode.module.components.cart.CartStepperView
+        android:id="@+id/coupon_stepper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:max_count="20"
+        app:min_count="1"
+        app:step_value="1" />
+
+    <top.iqqcode.module.layout.flow.CouponFlowLayout
+        android:id="@+id/coupon_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/coupon_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/coupon_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="4dp"
+        android:textSize="14sp" />
+
+</LinearLayout>

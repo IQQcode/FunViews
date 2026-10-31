@@ -13,6 +13,7 @@
         <item name="much_level1_item">分类</item>
         <item name="less_level1_item">分类</item>
         <item name="cart_summary">购物车结算</item>
+        <item name="coupon_select">优惠券</item>
     </string-array>
 
     <string-array name="fragments_full_path">
@@ -27,6 +28,7 @@
         <item name="much_level1_item">"com.kunminx.linkagelistview.ui.MuchPrimaryItemSampleFragment"</item>
         <item name="less_level1_item">"com.kunminx.linkagelistview.ui.LessPrimaryItemSampleFragment"</item>
         <item name="cart_summary">"top.iqqcode.funviews.ui.CartSummaryFragment"</item>
+        <item name="coupon_select">"top.iqqcode.funviews.ui.CouponSelectFragment"</item>
     </string-array>
 
 </resources>
